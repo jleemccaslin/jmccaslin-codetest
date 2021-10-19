@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="base.css" />
+    <title>Things To Do: A Simple To-Do List App</title>
+  </head>
+  <body>
+    <div class="header__box">
+      <h1 class="header__h1">Things to do</h1>
+      <div class="header__input-container">
+        <input type="text" placeholder="Add a todo" class="header__input" />
+        <button class="header__input-btn btn">Add</button>
+      </div>
+    </div>
+    <main class="todo">
+      <div class="todo__item">
+        <p class="todo__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </p>
+        <div class="todo__btn-container">
+          <button class="todo__btn--toggle btn">Complete</button>
+          <button class="todo__btn--delete btn btn-red">Delete</button>
+        </div>
+      </div>
+      <div class="todo__item todo__item--toggle todo__completed">
+        <p class="todo__description">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Necessitatibus.
+        </p>
+        <div class="todo__btn-container">
+          <button class="todo__btn--toggle btn">Undo</button>
+          <button class="todo__btn--delete btn btn-red">Delete</button>
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="base.js"></script>
+</html>
